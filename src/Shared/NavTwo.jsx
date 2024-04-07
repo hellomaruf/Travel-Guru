@@ -1,13 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 
-function Nav() {
+function NavTwo() {
   const link = (
     <>
       <NavLink
         className={({ isActive }) =>
           isActive
             ? "text-amber-400 font-medium px-4"
-            : "text-white font-medium px-4"
+            : "text-black font-medium px-4"
         }
         to="/"
       >
@@ -17,7 +17,7 @@ function Nav() {
         className={({ isActive }) =>
           isActive
             ? "text-amber-400 font-medium px-4"
-            : "text-white font-medium px-4"
+            : "text-black font-medium px-4"
         }
         to="/destination"
       >
@@ -27,7 +27,7 @@ function Nav() {
         className={({ isActive }) =>
           isActive
             ? "text-amber-400 font-medium px-4"
-            : "text-white font-medium px-4"
+            : "text-black font-medium px-4"
         }
         to="/blog"
       >
@@ -37,7 +37,7 @@ function Nav() {
         className={({ isActive }) =>
           isActive
             ? "text-amber-400 font-medium px-4"
-            : "text-white font-medium px-4"
+            : "text-black font-medium px-4"
         }
         to="/contact"
       >
@@ -72,7 +72,7 @@ function Nav() {
             {link}
           </ul>
         </div>
-        <img src="/images/logoTravel.png" alt="" srcset="" />
+        <img className="w-32" src="/images/logo.png" alt="" srcset="" />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{link}</ul>
@@ -89,4 +89,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default NavTwo;

@@ -1,8 +1,9 @@
 import { useState } from "react";
-import Nav from "../../../Shared/Nav";
+import Nav from "../../Shared/Nav";
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
+import { Link } from "react-router-dom";
 
 function Booking() {
   const [startDate, setStartDate] = useState(new Date());
@@ -83,7 +84,7 @@ function Booking() {
                   </div>
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn bg-amber-400">Start Booking</button>
+                  <Link to='/login' className="btn bg-amber-400">Start Booking</Link>
                 </div>
               </form>
             </div>
