@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import NavTwo from "../../Shared/NavTwo";
+import { useContext } from "react";
+import { AuthContext } from "../../Services/AuthProvider";
 
 function Login() {
+  const { name } = useContext(AuthContext);
+  
   return (
     <div className="bg-gray-100 h-screen">
       <NavTwo />
