@@ -5,11 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import "./styles.css";
-
-// import required modules
 import { Autoplay, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="">
@@ -31,9 +28,9 @@ function Home() {
                 headquarters in southeastern Bangladesh. It is famous mostly for
                 its long natural sandy beach, and it ...
               </p>
-              <button className="btn border-none bg-amber-400 hover:bg-amber-300">
+              <Link to='/booking' className="btn border-none bg-amber-400 hover:bg-amber-300">
                 Booking
-              </button>
+              </Link>
             </div>
             <div className="">
               <Swiper
